@@ -24,8 +24,6 @@
     <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/join.css">
     <!-- Responsive-->
     <link rel="stylesheet" href="${contextPath}/resources/css/responsive.css">
-    <!-- fevicon -->
-    <link rel="icon" href="${contextPath}/resources/images/fevicon.png" type="image/gif" />
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="${contextPath}/resources/css/jquery.mCustomScrollbar.min.css">
     <!-- Tweaks for older IEs-->
@@ -34,8 +32,6 @@
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans:400,700&display=swap&subset=latin-ext"
        rel="stylesheet">
     <!-- owl stylesheets -->
-    <link rel="stylesheet" href="${contextPath}/resources/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="${contextPath}/resources/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
        media="screen">
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
@@ -52,10 +48,8 @@
     <script src="${contextPath}/resources/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="${contextPath}/resources/js/custom.js"></script>
     <!-- javascript -->
-    <script src="${contextPath}/resources/js/owl.carousel.js"></script>
     <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
-    <script src="${contextPath}/resources/js/login.js"></script>
     
     <script type="text/javascript">
 $(document).ready(function(){
@@ -149,6 +143,7 @@ $(document).ready(function(){
         <div class="field">
             <b>아이디</b>
             <span class="placehold-text"><input type="text" id="mem_id" name="mem_id" maxlength="20"></span>
+            <b><button type="button" class="btn btn-primary btn-sm" onclick="registerCheck()">중복확인</button></td></b>
         </div>
         <div class="field">
             <b>비밀번호</b>
