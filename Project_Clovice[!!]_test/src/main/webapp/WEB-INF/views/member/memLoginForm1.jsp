@@ -1,8 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-    <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
-
+<c:set var="contextPath" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,14 +14,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <!-- site metas -->
-   <title>About</title>
+   <title>Client</title>
    <meta name="keywords" content="">
    <meta name="description" content="">
    <meta name="author" content="">
    <!-- bootstrap css -->
    <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/bootstrap.min.css">
    <!-- style css -->
-   <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/style.css">
+   <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/login.css">
    <!-- Responsive-->
    <link rel="stylesheet" href="${contextPath}/resources/css/responsive.css">
    <!-- fevicon -->
@@ -40,9 +39,8 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
       media="screen">
    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-
-   <!-- Javascript files-->
+   
+      <!-- Javascript files-->
    <script src="${contextPath}/resources/js/jquery.min.js"></script>
    <script src="${contextPath}/resources/js/popper.min.js"></script>
    <script src="${contextPath}/resources/js/bootstrap.bundle.min.js"></script>
@@ -53,110 +51,49 @@
    <script src="${contextPath}/resources/js/custom.js"></script>
    <!-- javascript -->
    <script src="${contextPath}/resources/js/owl.carousel.js"></script>
-   <script src="${contextPath}/resources/https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-   <script src="${contextPath}/resources/https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
-  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  
-   <script>
-      $('.slider-2 .page-nav > div').click(function () {
-
-         var $this = $(this);
-         var $pagenav = $this.parent()
-         var $current = $pagenav.find('.active');
-
-         $current.removeClass('active');
-         $this.addClass('active');
-
-         var index = $this.index();
-         var $슬라이더 = $this.closest('.slider-2');
-
-         $슬라이더.find('.slides > div.active').removeClass('active');
-         $슬라이더.find('.slides > div').eq(index).addClass('active');
-
-
-      });
-
-      $('.slider-2 > .side-btns > div:first-child').click(function () {
-         var $this = $(this);
-         var $slider = $this.closest('.slider-2');
-
-         var $current = $slider.find('.page-nav > div.active');
-         var $post = $current.prev();
-
-         if ($post.length == 0) {
-            $post = $slider.find('.page-nav > div:last-child');
-         }
-
-         $post.click();
-      });
-
-      $('.slider-2 > .side-btns > div:last-child').click(function () {
-         var $this = $(this);
-         var $slider = $this.closest('.slider-2');
-
-         var $current = $slider.find('.page-nav > div.active');
-         var $post = $current.next();
-
-         if ($post.length == 0) {
-            $post = $slider.find('.page-nav > div:first-child');
-         }
-
-         $post.click();
-      });
-   </script>
-
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+   <script src="${contextPath}/resources/js/login.js"></script>
+   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+		if(${!empty msgType}){
+			$("#messageType").attr("class","modal-content panel-warning");
+			$("#myMessage").modal("show");
+		}
+	});
+  </script>
+   
 </head>
 
 <body>
    <!-- header section start -->
-  <jsp:include page="./common/header1.jsp"></jsp:include>
+       	<jsp:include page="../common/header1.jsp"></jsp:include>
    <!-- header section end -->
-   <!-- about section start -->
-   <div class="about_section layout_padding">
-      <div class="container">
-         <div class="about_section_main">
-            <div class="row">
-               <div class="col-md-6">
-                  <div><img src="${contextPath}/resources/images/64578.jpg" class="image_3"></div>
-               </div>
-               <div class="col-md-6">
-                  <div class="about_taital_main">
-                     <h1 class="about_taital">#캐주얼</h1>
-                     <p class="about_text">labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatlabore et dolore magna
-                        aliqua.</p>
-                     <div class="readmore_bt"><a href="#">다른 코디 더보기</a></div>
-                  </div>
-                  <div class="about_taital_main">
-                     <div class="slider-2">
-
-                        <div class="side-btns">
-                           <div><span><i class="fas fa-caret-left"></i></i></span></div>
-                           <div><span><i class="fas fa-caret-right"></i></span></div>
-                        </div>
-
-                        <div class="slides">
-                           <div class="active" style="background-image:url(${contextPath}/resources/images/1150606_0.jpg);"></div>
-                           <div style="background-image:url(${contextPath}/resources/images/1375487_1.jpg);"></div>
-                           <div style="background-image:url(${contextPath}/resources/images/1377183_0.jpg);"></div>
-                           <div style="background-image:url(${contextPath}/resources/images/1378411_0.jpg);"></div>
-                        </div>
-
-                        <div class="page-nav">
-                           <div class="active"></div>
-                           <div></div>
-                           <div></div>
-                           <div></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+   <!-- customer section start -->
+   <div class="login">
+      <section class="login_form">
+         <h1>Clovice</h1>
+         <form name="frm" action="${contextPath}/memLogin.do" method="post">
+            <div class="int_area">
+               <input type="text" id="mem_id" name="mem_id" class="id" autocomplete="off" placeholder="아이디">
             </div>
-         </div>
-      </div>
+            <div class="int_area">
+               <input type="password" id="mem_pw" name="mem_pw" class="pw" autocomplete="off" placeholder="비밀번호">
+            </div>
+            <div class="btn_area">
+               <button type="submit">로그인</button>
+            </div>
+            <div class="caption">
+               <p>아직 회원이 아니신가요? <a href="#">회원가입</a></p>
+            </div>
+         </form>
+      </section>
    </div>
-   <!-- about section end -->
+   <!-- customer section end -->
    <!-- footer section start -->
    <div class="footer_section layout_padding">
       <div class="container">
@@ -214,6 +151,25 @@
          </div>
       </div>
    </div>
+   <%-- 실패 메시지 --%>
+    <div id="myMessage" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div id="messageType" class="modal-content panel-info">
+						<div class="modal-header panel-heading">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">${msgType}</h4>
+						</div>
+						<div class="modal-body">
+							<p>${msg}</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
    <!-- footer section end -->
 
 </body>

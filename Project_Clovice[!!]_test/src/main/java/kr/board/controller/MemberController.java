@@ -24,9 +24,9 @@ public class MemberController {
 	}
 	
 	@RequestMapping("/memRegisterCheck.do")
-	public @ResponseBody int memRegisterCheck(@RequestParam("memID")String memID) {
-		Member m = memberMapper.registerCheck(memID);
-		if(m!=null || memID.equals("")) {
+	public @ResponseBody int memRegisterCheck(@RequestParam("mem_id")String mem_id) {
+		Member m = memberMapper.registerCheck(mem_id);
+		if(m!=null || mem_id.equals("")) {
 			return 0; // 사용불가한 아이디
 		}
 		return 1; // 사용가능한 아이디
@@ -48,12 +48,12 @@ public class MemberController {
 				
 				rttr.addFlashAttribute("msgType","실패 메시지");
 				rttr.addFlashAttribute("msg","모든 내용을 입력하세요");
-				return "redirect:/memJoin.do";
+				return "redirect:/memJoin1.do";
 		}
 		if(!memPassword1.equals(memPassword2)) {
 			rttr.addFlashAttribute("msgType","실패 메시지");
 			rttr.addFlashAttribute("msg","비밀번호가 서로 다릅니다.");
-			return "redirect:/memJoin.do";
+			return "redirect:/memJoin1.do";
 		}
 		// 회원을 테이블에 저장하기
 		int result = memberMapper.register(m);
@@ -66,7 +66,7 @@ public class MemberController {
 		}else {
 			rttr.addFlashAttribute("msgType","실패 메시지");
 			rttr.addFlashAttribute("msg","이미 존재하는 회원입니다.");
-			return "redirect:/memJoin.do";
+			return "redirect:/memJoin1.do";
 		}
 		
 	}
@@ -81,7 +81,7 @@ public class MemberController {
 	@RequestMapping("/memLoginForm.do")
 	public String memLoginForm() {
 		
-		return "member/memLoginForm"; // memLoginForm.jsp
+		return "member/memLoginForm1"; // memLoginForm.jsp
 	}
 	
 	// 로그인 기능 구현
@@ -101,7 +101,7 @@ public class MemberController {
 			return "redirect:/";
 		}else { // 로그인 실패
 			rttr.addFlashAttribute("msgType","실패 메시지");
-			rttr.addFlashAttribute("msg","다시 로그인해주세요.");
+			rttr.addFlashAttribute("msg","아이디,비밀번호를 확인해주세요.");
 			return "redirect:/memLoginForm.do";
 		}
 		
@@ -112,7 +112,7 @@ public class MemberController {
 	@RequestMapping("/memUpdateForm.do")
 	public String memUpdateForm() {
 		
-		return "member/memUpdateForm";
+		return "member/memUpdateForm1";
 	}
 	
 	@RequestMapping("/memUpdate.do")

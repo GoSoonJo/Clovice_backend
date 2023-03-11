@@ -21,6 +21,8 @@ public class BoardController {
 		
 		return "board/main";
 	}
+	
+	
 		// @ResponseBody -> jackjon-databind(객체를 JSON 데이터포멧으로 변환)
 	
 	

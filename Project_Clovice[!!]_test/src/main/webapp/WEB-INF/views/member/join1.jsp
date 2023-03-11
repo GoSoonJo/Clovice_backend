@@ -50,6 +50,15 @@
     <!-- javascript -->
     <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+
+
+	<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
     
     <script type="text/javascript">
 $(document).ready(function(){
@@ -89,7 +98,7 @@ $(document).ready(function(){
 		$("#passMessage").html("비밀번호가 서로 일치하지 않습니다.");
 	}else{
 		$("#passMessage").html("");
-		$("#memPassword").val(memPassword1);
+		$("#mem_pw").val(memPassword1);
 	}
 		
 	}
@@ -107,31 +116,10 @@ $(document).ready(function(){
 </head>
 
 <body>
-    <!-- header section start -->
-    <div class="header_section">
-        <div class="container-fluid">
-            <nav class="navbar navbar-light bg-light justify-content-between">
-                <a class="logo" href="index.html"><img src="${contextPath}/resources/images/logo.png"></a></a>
-                <a href="index.html">Home</a>
-                <a href="products.html">Products</a>
-                <a href="about.html">About</a>
-                <a href="client.html">Client</a>
-                <a href="contact.html">Contact</a>
-                <form class="form-inline ">
-                    <div class="login_text">
-                        <ul>
-                            <li><a href="login.html"><img src="${contextPath}/resources/images/user-icon.png"></a></li>
-                            <li><a href="#"><img src="${contextPath}/resources/images/bag-icon.png"></a></li>
-                            <li><a href="#"><img src="${contextPath}/resources/images/search-icon.png"></a></li>
-                        </ul>
-                    </div>
-                </form>
-            </nav>
-        </div>
-    </div>
-    <!-- header section end -->
+   
     <!-- customer section start -->
 
+    	<jsp:include page="../common/header1.jsp"></jsp:include>
     <div class="member">
 
         <h1>Clovice</h1>
@@ -165,7 +153,7 @@ $(document).ready(function(){
         <div class="field birth">
             <b>생년월일</b>
             <div>
-                <input type="number" id="mem_birth" name="mem_birth" placeholder="예)19950102">
+                <input type="text" id="mem_birth" name="mem_birth" placeholder="예)19950102" maxlength="8">
             </div>
         </div>
 
@@ -181,7 +169,7 @@ $(document).ready(function(){
         <!-- 5. 이메일_전화번호 -->
         <div class="field">
             <b>본인 확인 이메일</b>
-            <input type="email" id="mem_email" name="mem_email" placeholder="">
+            <input type="text" id="mem_email" name="mem_email" placeholder="">
         </div>
 
         <div class="field tel-number">
@@ -195,8 +183,49 @@ $(document).ready(function(){
 
         <!-- 6. 가입하기 버튼 -->
         
+        <span id="passMessage" style="color:red"></span>
         <input type="button"  class="btn btn-primary btn-sm pull-right" value="가입하기" onclick="goInsert()"/>
+		
+		<!-- Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+				<div class="modal-dialog">
 
+					<!-- Modal content-->
+					<div id="checkType" class="modal-content panel-info">
+						<div class="modal-header panel-heading">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">메세지 확인</h4>
+						</div>
+						<div class="modal-body">
+							<p id="checkMessage"></p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<%-- 실패 메시지 출력 --%>
+						<!-- Modal -->
+			<div id="myMessage" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div id="messageType" class="modal-content panel-info">
+						<div class="modal-header panel-heading">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">${msgType}</h4>
+						</div>
+						<div class="modal-body">
+							<p>${msg}</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
         <!-- 7. 푸터 -->
         <div class="member-footer">
             

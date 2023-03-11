@@ -12,4 +12,16 @@ public class MainController {
 		return "index";
 	}
 	
+	@RequestMapping("/products.do")
+	public String products() {
+		
+		return "products";
+	}
+	
+	@RequestMapping("/codi.do")
+	public String codi() {
+		
+		return "codi";
+	}
+	
 }

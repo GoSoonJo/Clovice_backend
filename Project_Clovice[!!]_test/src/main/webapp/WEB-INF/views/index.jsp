@@ -46,12 +46,31 @@
    <script src="${contextPath}/resources/js/bootstrap.bundle.min.js"></script>
    <script src="${contextPath}/resources/js/jquery-3.0.0.min.js"></script>
    <script src="${contextPath}/resources/js/plugin.js"></script>
+   
    <!-- sidebar -->
    <script src="${contextPath}/resources/js/jquery.mCustomScrollbar.concat.min.js"></script>
    <script src="${contextPath}/resources/js/custom.js"></script>
    <!-- javascript -->
    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+   
+
+	<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript">
+  $(document).ready(function(){
+		if(${!empty msgType}){
+			$("#messageType").attr("class","modal-content panel-success");
+			$("#myMessage").modal("show");
+		}
+	});
+  </script>
+   
    <script>
       function openNav() {
          document.getElementById("mySidenav").style.width = "100%";
@@ -70,26 +89,7 @@
       <img src="${contextPath}/resources/images/top-icon.png">
    </a>
    <!-- header section start -->
-   <div class="header_section">
-      <div class="container-fluid">
-         <nav class="navbar navbar-light bg-light justify-content-between">
-            <a class="logo" href="${contextPath}"><img src="${contextPath}/resources/images/logo.png"></a></a>
-            <a href="products.html">코디맵</a>
-            <a href="about.html">About</a>
-            <a href="client.html">Client</a>
-            <a href="contact.html">Contact</a>
-            <form class="form-inline ">
-               <div class="login_text">
-                  <ul>
-                     <li><a href="${contextPath}/memJoin.do"><img src="${contextPath}/resources/images/user-icon.png"></a></li>
-                     <li><a href="#"><img src="${contextPath}/resources/images/bag-icon.png"></a></li>
-                     <li><a href="#"><img src="${contextPath}/resources/images/search-icon.png"></a></li>
-                  </ul>
-               </div>
-            </form>
-         </nav>
-      </div>
-   </div>
+      	<jsp:include page="./common/header1.jsp"></jsp:include>
    <!-- header section end -->
    <!-- banner section start -->
    <div class="banner_section layout_padding">
@@ -167,7 +167,7 @@
                <div class="row">
                   <div class="col-lg-3 col-sm-6">
                      <div class="product_box">
-                        <a href="./codi.html" class="codi">
+                        <a href="codi.do" class="codi">
                            <img src="${contextPath}/resources/images/64578.jpg" class="image_1">
                         </a>
 
@@ -240,7 +240,7 @@
                </div>
             
          
-         <div class="seemore_bt"><a href="./products.html">코디 더보기</a></div>
+         <div class="seemore_bt"><a href="products.do">코디 더보기</a></div>
       </div>
    </div>
    <!-- product section end -->
@@ -393,6 +393,24 @@
       </div>
    </div>
    <!-- footer section end -->
+   <div id="myMessage" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div id="messageType" class="modal-content panel-info">
+						<div class="modal-header panel-heading">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">${msgType}</h4>
+						</div>
+						<div class="modal-body">
+							<p>${msg}</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
   
 </body>
 
