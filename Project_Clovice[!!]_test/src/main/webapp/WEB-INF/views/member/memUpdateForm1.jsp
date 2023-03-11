@@ -202,13 +202,11 @@ $(document).ready(function(){
 
 				</div>
 			</div>
-        <!-- 7. 푸터 -->
-        <div class="member-footer">
-            
-            <span><a href="#none">CLOVICE.</a></span>
-            <br></div>
-        </div>
-        <br>
     </div>
+        <!-- 7. 푸터 -->
+    <div id="start_footer"></div>
+        <!-- footer section start -->
+      	<jsp:include page="../common/footer.jsp"></jsp:include>
+   		<!-- footer section end -->
 </body>
 </html>

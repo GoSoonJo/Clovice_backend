@@ -148,9 +148,9 @@
         </div>
         <br>
 
-        
-        
-
+   <!-- footer section start -->
+      <jsp:include page="common/footer.jsp"></jsp:include>
+   <!-- footer section end -->
     </div>
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
