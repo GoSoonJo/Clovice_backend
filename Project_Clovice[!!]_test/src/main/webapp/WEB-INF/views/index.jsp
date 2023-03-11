@@ -338,6 +338,7 @@
    <!-- footer section start -->
       <jsp:include page="common/footer.jsp"></jsp:include>
    <!-- footer section end -->
+  
    <div id="myMessage" class="modal fade" role="dialog">
 				<div class="modal-dialog">
 					<!-- Modal content-->
