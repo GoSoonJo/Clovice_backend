@@ -1016,13 +1016,18 @@ button {
 
 /* footer section start */
 
+#start_footer {
+	margin-top: 200px;
+}
+
 .footer_section {
     width: 100%;
     float: left;
-    background-color: #252525;
+    /* background-color: #252525; */
     height: auto;
     background-size: 100%;
     padding-bottom: 30px;
+    border-top: 1px solid #fef4ec;
 }
 
 .footer_logo {
@@ -1050,16 +1055,17 @@ button {
 
 .address_bt li {
     font-size: 16px;
-    color: #ffffff;
+    color: #111111;
     padding: 10px 0px 0px 0px;
+    cursor: default;
 }
 
-.address_bt li a {
+/* .address_bt li a {
     color: #ffffff;
-}
+} */
 
 .address_bt li a:hover {
-    color: #f5ddb6;
+    color: #666666;
 }
 
 .padding_left10 {
@@ -1068,7 +1074,7 @@ button {
 
 .address_text {
     font-size: 24px;
-    color: #ffffff;
+    color: #111111;
     text-transform: uppercase;
 }
 
@@ -1076,7 +1082,7 @@ button {
     width: 100%;
     float: left;
     font-size: 14px;
-    color: #ffffff;
+    /* color: #ffffff; */
     margin: 0px;
     text-align: center;
     padding-top: 20px;
@@ -1086,7 +1092,7 @@ button {
     width: 65%;
     float: left;
     font-size: 14px;
-    color: #ffffff;
+    /* color: #ffffff; */
     margin: 0px;
     padding-top: 10px;
 }
@@ -1101,7 +1107,7 @@ button {
     margin: 0 auto;
     text-align: center;
     padding-top: 40px;
-    border-bottom: 1px solid #f5ddb6;
+    border-bottom: 1px solid #fef4ec;
     padding-bottom: 30px;
 }
 
@@ -1115,16 +1121,16 @@ button {
 .social_icon li {
     float: left;
     font-size: 26px;
-    color: #f5ddb6;
+    color: #111111;
     padding: 10px;
 }
 
-.social_icon li a {
+/* .social_icon li a {
     color: #f5ddb6;
-}
+} */
 
-.social_icon li a:hover {
-    color: #ffffff;
+.social_icon li i:hover {
+    color: #666666;
 }
 
 

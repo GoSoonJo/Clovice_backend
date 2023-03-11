@@ -24,6 +24,8 @@
     <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/join.css">
     <!-- Responsive-->
     <link rel="stylesheet" href="${contextPath}/resources/css/responsive.css">
+    <!-- fevicon -->
+	<link rel="icon" href="images/fevicon.png" type="image/gif" />
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="${contextPath}/resources/css/jquery.mCustomScrollbar.min.css">
     <!-- Tweaks for older IEs-->
@@ -32,9 +34,11 @@
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans:400,700&display=swap&subset=latin-ext"
        rel="stylesheet">
     <!-- owl stylesheets -->
+    <link rel="stylesheet" href="${contextPath}/resources/css/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
        media="screen">
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="${contextPath}/resources/css/like.css">
     
     
     
@@ -226,14 +230,12 @@ $(document).ready(function(){
 
 				</div>
 			</div>
-        <!-- 7. 푸터 -->
-        <div class="member-footer">
-            
-            <span><a href="#none">CLOVICE.</a></span>
-            <br></div>
-        </div>
         <br>
     </div>
+    <div id="start_footer"></div>
+        <!-- footer section start -->
+      	<jsp:include page="../common/footer.jsp"></jsp:include>
+   		<!-- footer section end -->
 </body>
 
 </html>
