@@ -4,7 +4,6 @@
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
 
  <!-- header section start -->
- <body>
     <div class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-light bg-light justify-content-between">
@@ -39,5 +38,4 @@
             </nav>
         </div>
     </div>
-    </body>
     <!-- header section end -->

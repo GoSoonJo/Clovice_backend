@@ -112,7 +112,7 @@ $(document).ready(function(){
 				
 						<div class="field">
 							<b>아이디</b>
-							<input type="text" readonly value="${mvo.mem_id}" />
+							<b>${mvo.mem_id}</b>
 						</div>
 						<div class="field">
 							<b>비밀번호</b>
@@ -206,6 +206,8 @@ $(document).ready(function(){
 				</div>
 			</div>
     </div>
+        <!-- 7. 푸터 -->
+    <div id="start_footer"></div>
         <!-- footer section start -->
       	<jsp:include page="../common/footer.jsp"></jsp:include>
    		<!-- footer section end -->

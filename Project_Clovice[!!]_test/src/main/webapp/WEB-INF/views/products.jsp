@@ -465,7 +465,7 @@
    </div>
    <!-- product section end -->
    <!-- footer section start -->
-		<jsp:include page="../common/footer.jsp"></jsp:include>
+		<jsp:include page="./common/footer.jsp"></jsp:include>
    <!-- footer section end -->
 
 </body>
