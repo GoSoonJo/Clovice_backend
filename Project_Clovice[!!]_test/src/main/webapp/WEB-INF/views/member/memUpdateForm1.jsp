@@ -118,21 +118,21 @@ $(document).ready(function(){
 							<b>비밀번호</b>
 							<input class="userpw" id="memPassword1" name="memPassword1" onkeyup="passwordCheck()" type="password" class="form-control" placeholder="비밀번호를 입력하세요" maxlength="20" />
 						</div>
-						<tr>
-							<td style="width: 110px; vertical-align: middle;">비밀번호 확인</td>
-							<td colspan="2"><input id="memPassword2" name="memPassword2" onkeyup="passwordCheck()" type="password" class="form-control" placeholder="비밀번호를 확인하세요" maxlength="20" /></td>
-						</tr>
-						<tr>
-							<td style="width: 110px; vertical-align: middle;">사용자 이름</td>
-							<td colspan="2"><input id="mem_name" name="mem_name" type="text" class="form-control" placeholder="이름을 입력하세요" maxlength="20" value="${mvo.mem_name}"/></td>
-						</tr>
-						<tr>
-							<td style="width: 110px; vertical-align: middle;">생년월일</td>
-							<td colspan="2"><input id="mem_birth" name="mem_birth" type="text" class="form-control" placeholder="생년월일을 입력하세요" maxlength="8" value="${mvo.mem_birth}"/></td>
-						</tr>
-						<tr>
-							<td style="width: 110px; vertical-align: middle;">성별</td>
-							<td colspan="2">
+						<div>
+							<b>비밀번호 확인</b>
+							<input class="userpw" id="memPassword2" name="memPassword2" onkeyup="passwordCheck()" type="password" class="form-control" placeholder="비밀번호를 확인하세요" maxlength="20" />
+						</div>
+						<div><span id="passMessage" style="color:red"></span></div>
+						<div>
+							<b>사용자 이름</b>
+							<input id="mem_name" name="mem_name" type="text" placeholder="이름을 입력하세요" maxlength="20" value="${mvo.mem_name}"/>
+						</div>
+						<div>
+							<b>생년월일</b>
+							<input id="mem_birth" name="mem_birth" type="text" placeholder="생년월일을 입력하세요" maxlength="8" value="${mvo.mem_birth}"/>
+						</div>
+						<div>
+							<b>성별</b>
 								<div class="form-group" style="text-align: center; margin: 0 auto;">
 									<div class="btn-group" data-toggle="buttons">
 										<label class="btn btn-primary <c:if test="${mvo.mem_gender eq '남자'}">active</c:if>"> 
@@ -144,16 +144,14 @@ $(document).ready(function(){
 										<c:if test="${mvo.mem_gender eq '여자'}">checked</c:if>/>여자
 										</label>
 									</div>
-						</tr>
-						<tr>
-							<td style="width: 110px; vertical-align: middle;">이메일</td>
-							<td colspan="2">
-							<input id="mem_email" name="mem_email" type="text" class="form-control" placeholder="이메일을 입력하세요" maxlength="50" value="${mvo.mem_email}"/>
-							</td>
-						</tr>
+						</div>
+						<div>
+							<b>이메일</b>
+							<input id="mem_email" name="mem_email" type="text" placeholder="이메일을 입력하세요" maxlength="50" value="${mvo.mem_email}"/>
+						</div>
 						<tr>
 							<td colspan="3" style="text-align: left;">
-								<span id="passMessage" style="color:red"></span><input type="button" class="btn btn-primary btn-sm pull-right" value="수정" onclick="goUpdate()"/>
+								<input type="button" class="btn btn-primary btn-sm pull-right" value="수정" onclick="goUpdate()"/>
 							</td>
 						</tr>
 					</table>
@@ -163,7 +161,7 @@ $(document).ready(function(){
         <!-- 6. 가입하기 버튼 -->
         
         <span id="passMessage" style="color:red"></span>
-        <input type="button"  class="btn btn-primary btn-sm pull-right" value="가입하기" onclick="goInsert()"/>
+        <input type="reset"  class="btn btn-primary btn-sm pull-right" value="다시쓰기"/>
 		
 		<!-- Modal -->
 			<div id="myModal" class="modal fade" role="dialog">
