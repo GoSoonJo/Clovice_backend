@@ -23,4 +23,10 @@ update member_info set mem_pw=#{mem_pw},mem_name=#{mem_name},
 			where mem_id=#{mem_id}
 </update>
 
+<insert id="insertFeature" parameterType="kr.board.entity.Favorite">
+insert into 
+		favorite_test(mem_id,fav_color,fav_style,fav_tag)
+		values(#{mem_id},#{fav_color},#{fav_style},#{fav_tag})
+</insert>
+
 </mapper>

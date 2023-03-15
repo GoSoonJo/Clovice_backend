@@ -1,21 +1,30 @@
 package kr.board.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import kr.board.entity.Favorite;
+import kr.board.entity.Log;
 import kr.board.entity.Member;
+import kr.board.mapper.LogMapper;
 import kr.board.mapper.MemberMapper;
 
 @Controller
 public class MemberController {
 	@Autowired
 	MemberMapper memberMapper;
+	
+	@Autowired
+	LogMapper logMapper;
 
 	@RequestMapping("/memJoin.do")
 	public String memJoin() {
@@ -60,7 +69,7 @@ public class MemberController {
 		if(result == 1) { // 회원가입 성공 메시지
 			rttr.addFlashAttribute("msgType","성공 메시지");
 			rttr.addFlashAttribute("msg","회원가입에 성공했습니다.");
-			session.setAttribute("mvo",m); // $(!empty m) 회원가입 성공여부
+//			session.setAttribute("mvo",m); // $(!empty m) 회원가입 성공여부
 			// 회원가입이 성공하면 -> 로그인 처리하기
 			return "redirect:/";
 		}else {
@@ -86,11 +95,12 @@ public class MemberController {
 	
 	// 로그인 기능 구현
 	@RequestMapping("/memLogin.do")
-	public String memLogin(Member m,RedirectAttributes rttr,HttpSession session) {
+	public String memLogin(Member m,RedirectAttributes rttr,
+			HttpSession session,Log log) {
 		if(m.getMem_id()==null || m.getMem_id().equals("")||
 		   m.getMem_pw()==null || m.getMem_pw().equals("")) {
 			rttr.addFlashAttribute("msgType","실패 메시지");
-			rttr.addFlashAttribute("msg","모든 내용을 입력해주세요.");
+			rttr.addFlashAttribute("msg","아이디,비밀번호를 다시 확인하세요.");
 			return "redirect:/memLoginForm.do";
 		}
 		Member mvo = memberMapper.memLogin(m);
@@ -98,7 +108,12 @@ public class MemberController {
 			rttr.addFlashAttribute("msgType","성공 메시지");
 			rttr.addFlashAttribute("msg","로그인에 성공했습니다.");
 			session.setAttribute("mvo", mvo); // ${!empty mvo}
-			return "redirect:/";
+			int cnt = logMapper.logCount(mvo.getMem_id()); 
+			if (cnt == 1) {
+				return "redirect:/";
+			}else {
+				return "redirect:/memLoginForm.do";
+			}
 		}else { // 로그인 실패
 			rttr.addFlashAttribute("msgType","실패 메시지");
 			rttr.addFlashAttribute("msg","아이디,비밀번호를 확인해주세요.");
@@ -153,5 +168,42 @@ public class MemberController {
 		}
 		
 	}
+	
+	@RequestMapping("/getFeature.do")
+	public String getFeature() {
+		
+		return "member/getFeature";
+	}
+	
+	@RequestMapping("/insertFeature.do")
+	public void insertFeature(Favorite fvr) {
+		System.out.println(fvr);
+	  int result = memberMapper.insertFeature(fvr);
+		if(result == 1) { // 회원가입 성공 메시지
+			//rttr.addFlashAttribute("msgType","성공 메시지");
+			//rttr.addFlashAttribute("msg","회원가입에 성공했습니다.");
+			// 회원가입이 성공하면 -> 로그인 처리하기
+		
+	}
+	
+}
+	
+//	 @GetMapping("/insertFeature.do")
+//	    public String insertFeature(@RequestParam List<String> chk_color,
+//	    		List<String> chk_style,List<String> chk_tag){
+//	        for (String c : chk_color) {
+//	            //service.insert(c);
+//	        	System.out.println(c);
+//	        }
+//	        for (String c : chk_style) {
+//	            //service.insert(c);
+//	        	System.out.println(c);
+//	        }
+//	        for (String c : chk_tag) {
+//	            //service.insert(c);
+//	        	System.out.println(c);
+//	        }
+//	        return "redirect:/";
+//	    }
 	
 }

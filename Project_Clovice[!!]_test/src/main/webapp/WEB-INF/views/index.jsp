@@ -25,7 +25,7 @@
    <!-- Responsive-->
    <link rel="stylesheet" href="${contextPath}/resources/css/responsive.css">
    <!-- fevicon -->
-   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <link rel="icon" href="${contextPath}/resources/images/fevicon.png" type="image/gif" />
    <!-- Scrollbar Custom CSS -->
    <link rel="stylesheet" href="${contextPath}/resources/css/jquery.mCustomScrollbar.min.css">
    <!-- Tweaks for older IEs-->
@@ -55,12 +55,6 @@
    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
    
 
-	<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	
 	<script type="text/javascript">
   $(document).ready(function(){
@@ -71,15 +65,7 @@
 	});
   </script>
    
-   <script>
-      function openNav() {
-         document.getElementById("mySidenav").style.width = "100%";
-      }
 
-      function closeNav() {
-         document.getElementById("mySidenav").style.width = "0";
-      }
-   </script>
    <script src="${contextPath}/resources/js/like.js"></script>
    
 </head>
@@ -338,6 +324,7 @@
    <!-- footer section start -->
       <jsp:include page="./common/footer.jsp"></jsp:include>
    <!-- footer section end -->
+  
    <div id="myMessage" class="modal fade" role="dialog">
 				<div class="modal-dialog">
 					<!-- Modal content-->
