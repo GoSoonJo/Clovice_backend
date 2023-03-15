@@ -90,6 +90,24 @@
             });
         });
    </script>
+      <script type="text/javascript">
+      // python에 코디 데이터 요청하는 스크립트
+   		$('document').ready(function() {
+   			$.ajax({
+				url : "http://127.0.0.1:8000/getCoordi",
+				type : 'get',
+				data : {
+					"member" : "gsj"
+				},
+				success : function(res) {
+					console.log(res)
+				},
+				error : function(e) {
+					alert("error");
+				}
+   			})
+		});
+   </script>
 </head>
 
 <body>

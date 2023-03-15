@@ -56,7 +56,7 @@
    <script src="${contextPath}/resources/https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
    <script src="${contextPath}/resources/https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   
    <script>
       $('.slider-2 .page-nav > div').click(function () {
@@ -105,6 +105,7 @@
          $post.click();
       });
    </script>
+
 
 </head>
 
