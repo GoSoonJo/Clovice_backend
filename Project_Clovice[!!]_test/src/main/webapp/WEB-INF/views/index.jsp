@@ -55,12 +55,6 @@
    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
    
 
-	<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	
 	<script type="text/javascript">
   $(document).ready(function(){
@@ -71,15 +65,7 @@
 	});
   </script>
    
-   <script>
-      function openNav() {
-         document.getElementById("mySidenav").style.width = "100%";
-      }
 
-      function closeNav() {
-         document.getElementById("mySidenav").style.width = "0";
-      }
-   </script>
    <script src="${contextPath}/resources/js/like.js"></script>
    
 </head>

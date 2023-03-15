@@ -55,9 +55,7 @@
    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
    <script src="${contextPath}/resources/js/login.js"></script>
    
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
   <script type="text/javascript">
   $(document).ready(function(){
 		if(${!empty msgType}){
@@ -88,7 +86,7 @@
                <button type="submit">로그인</button>
             </div>
             <div class="caption">
-               <p>아직 회원이 아니신가요? <a href="#">회원가입</a></p>
+               <p>아직 회원이 아니신가요? <a href="memJoin.do">회원가입</a></p>
             </div>
          </form>
       </section>
