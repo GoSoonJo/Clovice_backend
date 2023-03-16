@@ -188,22 +188,11 @@ public class MemberController {
 	
 }
 	
-//	 @GetMapping("/insertFeature.do")
-//	    public String insertFeature(@RequestParam List<String> chk_color,
-//	    		List<String> chk_style,List<String> chk_tag){
-//	        for (String c : chk_color) {
-//	            //service.insert(c);
-//	        	System.out.println(c);
-//	        }
-//	        for (String c : chk_style) {
-//	            //service.insert(c);
-//	        	System.out.println(c);
-//	        }
-//	        for (String c : chk_tag) {
-//	            //service.insert(c);
-//	        	System.out.println(c);
-//	        }
-//	        return "redirect:/";
-//	    }
+	@RequestMapping("myPage.do")
+	public String myPage() {
+		
+		return "member/myPage";
+	}
 	
+
 }

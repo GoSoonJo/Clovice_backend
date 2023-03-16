@@ -16,7 +16,7 @@
                 <form class="form-inline ">
                     <div class="login_text">
                  		<c:if test="${empty mvo}">
-							<ul class="nav navbar-nav navbar-right">
+							<ul>
 								<li><a href="${contextPath}/memLoginForm.do" class="text-dark">
 								<span class="glyphicon glyphicon-user"></span>로그인</a></li>
 								<li><a href="${contextPath}/memJoin.do" class="text-dark">
@@ -24,11 +24,9 @@
 							</ul>
 						</c:if>
 						<c:if test="${!empty mvo}">
-							<ul class="nav navbar-nav navbar-right">
-								<li><a href="${contextPath}/memUpdateForm.do" class="text-dark">
-								<span class="glyphicon glyphicon-wrench"></span>회원정보수정</a></li>
-								<li><a href="#" class="text-dark">
-								<span class="glyphicon glyphicon-tags"></span>북마크</a></li>
+							<ul>
+								<li><a href="${contextPath}/myPage.do" class="text-dark">
+								<span class="glyphicon glyphicon-wrench"></span>마이페이지</a></li>
 								<li><a href="${contextPath}/memLogout.do" class="text-dark">
 								<span class="glyphicon glyphicon-log-out"></span>로그아웃</a></li>
 							</ul>
