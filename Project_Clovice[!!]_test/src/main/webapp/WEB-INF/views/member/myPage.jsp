@@ -50,7 +50,7 @@
       <section data-v-42a0b80a="" data-v-fca1a73c="" class="my-page-wrap">
          <div data-v-42a0b80a="" class="my-page-box">
             <div data-v-42a0b80a="" class="my-page-snb">
-               <h2 data-v-6648a721="" data-v-42a0b80a="" class="musinsa-font"><a data-v-42a0b80a="" href="${contextPath}"
+               <h2 data-v-6648a721="" data-v-42a0b80a="" class="musinsa-font"><a data-v-42a0b80a="" href="${contextPath}/myPage.do"
                      class="musinsa-font nuxt-link-exact-active nuxt-link-active" data-v-6648a721=""
                      aria-current="page">마이페이지</a></h2>
                <div data-v-42a0b80a="">
