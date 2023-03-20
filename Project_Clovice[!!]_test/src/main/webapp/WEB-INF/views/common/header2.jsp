@@ -3,26 +3,23 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
 
- <!-- header section start -->
-   <div class="header_section">
+  <div class="header_section">
       <div class="container-fluid">
          <nav class="navbar navbar-light bg-light justify-content-between">
-            <a class="logo" href="${contextPath}"><img src="${contextPath}/resources/images/logo.png"/></a>
-                <a href="${contextPath}" class="text-dark">Home</a>
-                <a href="products.do" class="text-dark">Products</a>
-                <a href="about.html" class="text-dark">About</a>
-                <a href="client.html" class="text-dark">Client</a>
-                <a href="contact.html" class="text-dark">Contact</a>
+            <a class="logo" href="index.html"><img src="images/logo.png"></a></a>
+
             <form class="form-inline ">
                <div class="login_text">
                   <ul>
-                     <li><a href="${contextPath}/memLoginForm.do"><img src="${contextPath}/resources/images/user-icon.png"></a></li>
-                     <li><a href="#"><img src="${contextPath}/resources/images/bag-icon.png"></a></li>
-                     <li><a href="#"><img src="${contextPath}/resources/images/search-icon.png"></a></li>
+                     <li><a href="recommend.html">추천</a></li>
+                     <li><a href="products.html">코디맵</a></li>
+                     <li><a href="mypagelike.html">좋아요</a></li>
+                     <!-- <li><a href="client.html">Client</a></li>
+                     <li><a href="contact.html">Contact</a></li> -->
+                     <li><a href="login.html">로그인</a></li>
                   </ul>
                </div>
             </form>
          </nav>
       </div>
    </div>
-    <!-- header section end -->
