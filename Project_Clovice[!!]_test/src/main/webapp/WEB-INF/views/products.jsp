@@ -100,13 +100,24 @@
 					"member" : "gsj"
 				},
 				success : function(res) {
-					console.log(res)
+					$.ajax({
+			      		url : ".do",
+			      		data : res,
+			      		type : "get",
+			      		success: function(data) {
+							
+						},
+			      		error : function(e) {
+							alert("error");
+						}
+			      	})
 				},
 				error : function(e) {
 					alert("error");
 				}
    			})
 		});
+      	
    </script>
 </head>
 
