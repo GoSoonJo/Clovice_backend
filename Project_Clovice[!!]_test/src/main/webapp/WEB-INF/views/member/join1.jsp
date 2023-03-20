@@ -129,16 +129,16 @@ $(document).ready(function(){
         <!-- 2. 필드 -->
         <div class="field">
             <b>아이디</b>
-            <span class="placehold-text"><input type="text" id="mem_id" name="mem_id" maxlength="20"></span>
+            <span class="placehold-text"><input type="text" id="mem_id" name="mem_id" maxlength="10"></span>
             <b><button type="button" class="btn btn-primary btn-sm" onclick="registerCheck()">중복확인</button></td></b>
         </div>
         <div class="field">
             <b>비밀번호</b>
-            <input class="userpw" id="memPassword1" name="memPassword1" onkeyup="passwordCheck()" type="password">
+            <input class="userpw" id="memPassword1" name="memPassword1" onkeyup="passwordCheck()" type="password" maxlength="10">
         </div>
         <div class="field">
             <b>비밀번호 재확인</b>
-            <input class="userpw-confirm" id="memPassword2" name="memPassword2" onkeyup="passwordCheck()" type="password">
+            <input class="userpw-confirm" id="memPassword2" name="memPassword2" onkeyup="passwordCheck()" type="password" maxlength="10">
         </div>
         <div class="field">
         <b id="passMessage" style="color:red"></b>

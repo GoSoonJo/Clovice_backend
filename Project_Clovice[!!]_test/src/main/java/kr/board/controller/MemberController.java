@@ -188,10 +188,16 @@ public class MemberController {
 	
 }
 	
-	@RequestMapping("myPage.do")
+	@RequestMapping("/myPage.do")
 	public String myPage() {
 		
 		return "member/myPage";
+	}
+	
+	@RequestMapping("/bookMark.do")
+	public String bookMark() {
+		
+		return "member/bookMark";
 	}
 	
 

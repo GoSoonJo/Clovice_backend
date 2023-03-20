@@ -1,0 +1,13 @@
+.image-wrapper {
+    position: relative;
+  }
+  
+  .delete-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+  }
+  .image-wrapper:hover .delete-icon {
+    display: block;
+  }

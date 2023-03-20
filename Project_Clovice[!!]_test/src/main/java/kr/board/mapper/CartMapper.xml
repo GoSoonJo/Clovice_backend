@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="kr.board.mapper.CartMapper">
+
+	<!-- 카트 추가 -->
+	<insert id="addCart">
+	
+		insert into member_cart(mem_id, prod_num)
+		values(#{mem_id}, #{prod_num}) 
+	
+	</insert>
+	
+	
+	<!-- 카트 삭제 -->
+	<delete id="deleteCart">
+	
+		delete from member_cart where cartId = #{cartId}
+	
+	</delete>
+
+<!-- 카트 목록 -->
+	<select id="getCart" resultType="kr.board.entity.Cart">
+	
+		select a.cartId, a.mem_Id, a.prod_num, b.prod_name
+		from member_cart a left outer join product b on a.prod_num = b.prod_num
+		where mem_id = #{mem_id}	
+	
+	</select>
+	
+	<!-- 카트 확인 -->
+	<select id="checkCart" resultType="kr.board.entity.Cart">
+	
+		select * from member_cart 
+		where mem_id = #{mem_id} and prod_num = #{prod_num}
+	
+	</select>
+
+
+
+</mapper>
