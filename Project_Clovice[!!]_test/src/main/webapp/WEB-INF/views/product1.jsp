@@ -132,7 +132,7 @@
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
                      <a href="codi.do" class="codi">
-                        <img src="${contextPath}/resources/images/64578.jpg" class="image_1">
+                        <img src="${contextPath}/resources/images/1150606_0.jpg" class="image_1">
                      </a>
 
                      <button type="button" class="btn_like" id="btn_like_1">
