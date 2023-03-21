@@ -132,7 +132,7 @@
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
                      <a href="codi.do" class="codi">
-                        <img src="${contextPath}/resources/images/64578.jpg" class="image_1">
+                        <img src="${contextPath}/resources/product2/1149328_2.jpg" class="image_1">
                      </a>
 
                      <button type="button" class="btn_like" id="btn_like_1">
@@ -150,7 +150,7 @@
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
                      <a href="#" class="codi">
-                        <img src="${contextPath}/resources/images/84984.jpg" class="image_1">
+                        <img src="${contextPath}/resources/product2/1219189_1.jpg" class="image_1">
                      </a>
                      <button type="button" class="btn_like" id="btn_like_2">
                         <span class="img_emoti">좋아요</span>
@@ -168,7 +168,7 @@
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
                      <a href="#" class="codi">
-                        <img src="${contextPath}/resources/images/5646645.jpg" class="image_1">
+                        <img src="${contextPath}/resources/product2/1322220_0.jpg" class="image_1">
                      </a>
                      <button type="button" class="btn_like">
                         <span class="img_emoti">좋아요</span>
@@ -184,7 +184,7 @@
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
                      <a href="#" class="codi">
-                        <img src="${contextPath}/resources/images/5646645.jpg" class="image_1">
+                        <img src="${contextPath}/resources/product2/1564072_0.jpg" class="image_1">
                      </a>
                      <button type="button" class="btn_like">
                         <span class="img_emoti">좋아요</span>
@@ -202,7 +202,7 @@
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
                      <a href="./codi.html" class="codi">
-                        <img src="${contextPath}/resources/codi_image/codi_1.jpg" class="image_1">
+                        <img src="${contextPath}/resources/product2/987079_4.jpg" class="image_1">
                      </a>
 
                      <button type="button" class="btn_like">

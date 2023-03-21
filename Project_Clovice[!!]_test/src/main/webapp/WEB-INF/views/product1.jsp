@@ -131,8 +131,8 @@
             <div class="row">
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
-                     <a href="codi.do" class="codi">
-                        <img src="${contextPath}/resources/images/1150606_0.jpg" class="image_1">
+                     <a href="top1.do" class="codi">
+                        <img src="${contextPath}/resources/product1/1595032_4.jpg" class="image_1">
                      </a>
 
                      <button type="button" class="btn_like" id="btn_like_1">
@@ -150,7 +150,7 @@
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
                      <a href="#" class="codi">
-                        <img src="${contextPath}/resources/images/84984.jpg" class="image_1">
+                        <img src="${contextPath}/resources/product1/1595530_0.jpg" class="image_1">
                      </a>
                      <button type="button" class="btn_like" id="btn_like_2">
                         <span class="img_emoti">좋아요</span>
@@ -168,7 +168,7 @@
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
                      <a href="#" class="codi">
-                        <img src="${contextPath}/resources/images/5646645.jpg" class="image_1">
+                        <img src="${contextPath}/resources/product1/1809545_0.jpg" class="image_1">
                      </a>
                      <button type="button" class="btn_like">
                         <span class="img_emoti">좋아요</span>
@@ -184,7 +184,7 @@
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
                      <a href="#" class="codi">
-                        <img src="${contextPath}/resources/images/5646645.jpg" class="image_1">
+                        <img src="${contextPath}/resources/product1/655885_4.jpg" class="image_1">
                      </a>
                      <button type="button" class="btn_like">
                         <span class="img_emoti">좋아요</span>
@@ -202,7 +202,7 @@
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
                      <a href="./codi.html" class="codi">
-                        <img src="${contextPath}/resources/codi_image/codi_1.jpg" class="image_1">
+                        <img src="${contextPath}/resources/product1/983824_1.jpg" class="image_1">
                      </a>
 
                      <button type="button" class="btn_like">
