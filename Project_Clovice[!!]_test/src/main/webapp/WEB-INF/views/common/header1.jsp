@@ -12,6 +12,7 @@
                 <a href="product1.do" class="text-dark" style="font-size:20px;">상의</a>
                 <a href="product2.do" class="text-dark" style="font-size:20px;">하의</a>
                 <a href="product3.do" class="text-dark" style="font-size:20px;">신발</a>
+                <a href="products.do" class="text-dark" style="font-size:20px;">코디맵</a>
                 <a href="boardMain.do" class="text-dark" style="font-size:20px;">커뮤니티</a>
                 </c:if>
                 <c:if test="${empty mvo}">

@@ -57,13 +57,9 @@
                </div>
                <div class="col-md-6">
                   <div class="about_taital_main">
-                     <h1 class="about_taital">#캐주얼</h1>
-                     <p class="about_text">labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatlabore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequatlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                     <div class="readmore_bt"><a href="#">다른 코디 더보기</a></div>
+                     <h1 class="about_taital">데일리 스타일</h1>
+                     <p class="about_text" style="font-size:21px;">그래픽이 매력적인 스웨트셔츠와 데님 팬츠를 코디하고 트러커 재킷으로 완성한 캐주얼 룩</p>
+                     <div class="readmore_bt"><a href="product1.do">다른 코디 더보기</a></div>
                   </div>
                   <div class="about_taital_main">
                      <div class="slider-2">

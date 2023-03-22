@@ -92,21 +92,21 @@
    </script>
       <script type="text/javascript">
       // python에 코디 데이터 요청하는 스크립트
-   		$('document').ready(function() {
-   			$.ajax({
-				url : "http://127.0.0.1:8000/getCoordi",
-				type : 'get',
-				data : {
-					"mvo" : "mvo.getMem_id()"
-				},
-				success : function(res) {
-					console.log(res)
-				},
-				error : function(e) {
-					alert("error");
-				}
-   			})
-		});
+   		//$('document').ready(function() {
+   			//$.ajax({
+				//url : "http://127.0.0.1:8000/getCoordi",
+				//type : 'get',
+			//	data : {
+			//		"mvo" : "mvo.getMem_id()"
+			//	},
+			//	success : function(res) {
+			//		console.log(res)
+			//	},
+			//	error : function(e) {
+			//		alert("error");
+			//	}
+   			//})
+	//	});
    </script>
 </head>
 
@@ -123,8 +123,7 @@
          <div class="row">
             <div class="col-sm-12">
                <h1 class="product_taital">상의</h1>
-               <p class="product_text">incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                  nostrud exercitation</p>
+               <p class="product_text"></p>
             </div>
          </div>
          <div class="product_section_2 layout_padding">
@@ -220,8 +219,11 @@
 
                      <a href="#" class="hash">
                         <div class="tag_list">
-                           <a href="#" class="tag">#캐주얼</a>
-                           <a href="#" class="tag">#ㅇㅅㅇ</a>
+                           <a href="#" class="tag">#드레스셔츠</a>
+                           <a href="#" class="tag">#루즈핏</a>
+                           <a href="#" class="tag">#실크</a>
+                           <a href="#" class="tag">#오버사이즈셔츠</a>
+                           <a href="#" class="tag">#오버핏</a>
                         </div>
                      </a>
                   </div>
@@ -236,10 +238,10 @@
                      </button>
                      <a href="#" class="hash">
                         <div class="tag_list">
-                           <a href="#" class="tag">#걸리쉬</a>
-                           <a href="#" class="tag">#나는 가고 싶다</a>
-                           <a href="#" class="tag">#집에 매우</a>
-                           <a href="#" class="tag">#호에에에에</a>
+                           <a href="#" class="tag">#긴팔티</a>
+                           <a href="#" class="tag">#롱슬리브</a>
+                           <a href="#" class="tag">#쭉티</a>
+                           <a href="#" class="tag">#긴팔티셔츠</a>
                         </div>
                      </a>
                   </div>
@@ -254,8 +256,10 @@
                      </button>
                      <a href="#" class="hash">
                         <div class="tag_list">
-                           <a href="#" class="tag">#캐주얼</a>
-                           <a href="#" class="tag">#ㅇㅅㅇ</a>
+                           <a href="#" class="tag">#나시</a>
+                           <a href="#" class="tag">#민소매</a>
+                           <a href="#" class="tag">#여성나시</a>
+                           <a href="#" class="tag">#여름나시</a>
                         </div>
                      </a>
                   </div>
@@ -270,8 +274,10 @@
                      </button>
                      <a href="#" class="hash">
                         <div class="tag_list">
-                           <a href="#" class="tag">#캐주얼</a>
-                           <a href="#" class="tag">#ㅇㅅㅇ</a>
+                           <a href="#" class="tag">#긴팔티</a>
+                           <a href="#" class="tag">#레이어드</a>
+                           <a href="#" class="tag">#롱슬리브</a>
+                           <a href="#" class="tag">#무지티</a>
                         </div>
                      </a>
                   </div>
@@ -290,8 +296,10 @@
 
                      <a href="#" class="hash">
                         <div class="tag_list">
-                           <a href="#" class="tag">#캐주얼</a>
-                           <a href="#" class="tag">#ㅇㅅㅇ</a>
+                           <a href="#" class="tag">#</a>
+                           <a href="#" class="tag">#</a>
+                           <a href="#" class="tag">#</a>
+                           <a href="#" class="tag">#</a>
                         </div>
                      </a>
                   </div>

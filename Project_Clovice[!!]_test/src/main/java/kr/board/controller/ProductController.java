@@ -70,4 +70,25 @@ public class ProductController {
 		return "product3/shoes3";
 	}
 	
+	@RequestMapping("/recom1.do")
+	public String recom1() {
+		
+		return "recom_codi/recom_codi1";
+	}
+	@RequestMapping("/recom2.do")
+	public String recom2() {
+		
+		return "recom_codi/recom_codi2";
+	}
+	@RequestMapping("/recom3.do")
+	public String recom3() {
+		
+		return "recom_codi/recom_codi3";
+	}
+	@RequestMapping("/recom4.do")
+	public String recom4() {
+		
+		return "recom_codi/recom_codi4";
+	}
+	
 }

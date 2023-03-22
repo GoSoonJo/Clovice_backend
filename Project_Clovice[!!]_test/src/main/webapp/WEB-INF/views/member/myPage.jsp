@@ -57,33 +57,13 @@
                   <h3 data-v-42a0b80a="">나의 쇼핑</h3>
                   <ul data-v-42a0b80a="" class="my-page-snb-list">
                      <li data-v-42a0b80a="" class="">
-                        보관 판매 내역
-                     </li>
-                     <li data-v-42a0b80a="" class="">
-                        판매 내역
-                     </li>
-                     <li data-v-42a0b80a="" class="">
-                        구매 내역
-                     </li>
-                     <li data-v-42a0b80a="" class="">
-                        <a href="${contextPath}/bookMark.do">좋아요한 상품</a>
-                     </li>
-                  </ul>
-               </div>
-               <div data-v-42a0b80a="">
-                  <h3 data-v-42a0b80a="">내 정보</h3>
-                  <ul data-v-42a0b80a="" class="my-page-snb-list">
-                     <li data-v-42a0b80a="" class="">
+                        <a href="${contextPath}/myPage.do">좋아요한 상품</a>
+                        <li data-v-42a0b80a="" class="">
                         <a href="memUpdateForm.do">회원정보 수정</a>
                      </li>
                      <li data-v-42a0b80a="" class="">
                         쿠폰 관리
                      </li>
-                     <li data-v-42a0b80a="" class="">
-                        결제 관리
-                     </li>
-                     <li data-v-42a0b80a="" class="">
-                        정산 관리
                      </li>
                   </ul>
                </div>
@@ -94,7 +74,7 @@
                      <div data-v-544d2a9d="" class="user-info"><img data-v-544d2a9d=""
                            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjQwcHgiIGhlaWdodD0iMjQwcHgiIHZpZXdCb3g9IjAgMCAyNDAgMjQwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPjJGM0IxMjU1LUMzNjMtNDhEMC05Rjg4LTgwM0NCQUI4RjI5MTwvdGl0bGU+CiAgICA8ZyBpZD0iaU9TIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iTXlwYWdlX1Byb2ZpbGVfSW1nIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLjAwMDAwMCwgLTExNS4wMDAwMDApIj4KICAgICAgICAgICAgPGcgaWQ9Ik15cGFnZS9Qcm9maWxlL0ltZyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwLjAwMDAwMCwgMTE1LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZSIgZmlsbD0iI0VFRUVFRSIgeD0iMCIgeT0iMCIgd2lkdGg9IjI0MCIgaGVpZ2h0PSIyNDAiPjwvcmVjdD4KICAgICAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwtQ29weSIgZmlsbD0iI0NDQ0NDQyIgY3g9IjEyMCIgY3k9Ijk2IiByPSIyNCI+PC9jaXJjbGU+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNjgsMTcyIEM2OCwxNzAuMzgzNDA5IDY4LDE2Ny45NTg1MjIgNjgsMTY0LjcyNTMzOSBDNjgsMTQ0LjQ0MjQ5NCA4My45MjkyMzczLDEyOCAxMDMuNTc4OTQ3LDEyOCBMMTM2LjQyMTA1MywxMjggQzE1Ni4wNzA3NjMsMTI4IDE3MiwxNDQuNDQyNDk0IDE3MiwxNjQuNzI1MzM5IEwxNzIsMTcxLjk1NjA5NyIgaWQ9IlBhdGgiIGZpbGw9IiNDQ0NDQ0MiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+"
                            alt="profile">
-                        <div data-v-544d2a9d="" class="name-tag"><span data-v-544d2a9d=""></span></div>
+                        <div data-v-544d2a9d="" class="name-tag"><span data-v-544d2a9d="">${mvo.mem_id}님 환영합니다!</span></div>
                      </div>
                      <div data-v-544d2a9d="" class="user-coupon-box">
                         <div data-v-544d2a9d="" class="user-coupon"><span data-v-544d2a9d="">P</span></div>
@@ -110,7 +90,7 @@
                         <div data-v-544d2a9d="" class="wish-box">
                            <h3 data-v-544d2a9d="">좋아요한 상품 </h3> 
                            <span data-v-544d2a9d="" class="total">
-                              6
+                              
                            </span>
                         </div>
                         <p data-v-c57fe892="" data-v-544d2a9d="" class="more-btn" style="font-weight: normal;">
@@ -129,10 +109,17 @@
                                  <a href="#" class="hash">
                                  </a>
                                  <div class="tag_list"><a href="#" class="hash">
+                                    </a><a href="#" class="tag">#그래픽</a>
+                                    </a><a href="#" class="tag">#테이퍼드핏</a>
+                                    </a><a href="#" class="tag">#캠퍼스</a>
+                                    </a><a href="#" class="tag">#가을</a>
                                     </a><a href="#" class="tag">#캐주얼</a>
-                                    <a href="#" class="tag">#ㅇㅅㅇ</a>
+                                    </a><a href="#" class="tag">#세인트페인</a>
                                  </div>
                               </div>
+                              
+                              
+                              
                            </div>
                         </div>
                      </div>

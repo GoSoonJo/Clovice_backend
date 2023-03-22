@@ -123,11 +123,9 @@
                </div>
                <div class="col-md-6">
                   <div class="about_taital_main">
-                     <h1 class="about_taital">#캐주얼</h1>
-                     <p class="about_text">labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatlabore et dolore magna
-                        aliqua.</p>
-                     <div class="readmore_bt"><a href="#">다른 코디 더보기</a></div>
+                     <h1 class="about_taital">단정한 멋</h1>
+                     <p class="about_text">브라운 컬러가 돋보이는 니트 베스트와 셔츠를 레이어드하고 트렌치코트로 연출한 포멀 룩</p>
+                     <div class="readmore_bt"><a href="product2.do">다른 코디 더보기</a></div>
                   </div>
                   <div class="about_taital_main">
                      <div class="slider-2">

@@ -127,7 +127,7 @@
                      <p class="about_text">labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatlabore et dolore magna
                         aliqua.</p>
-                     <div class="readmore_bt"><a href="#">다른 코디 더보기</a></div>
+                     <div class="readmore_bt"><a href="product3.do">다른 코디 더보기</a></div>
                   </div>
                   <div class="about_taital_main">
                      <div class="slider-2">

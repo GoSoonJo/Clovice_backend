@@ -32,7 +32,7 @@
 			<ul class="nav navbar-nav navbar-right">
 						<li><a href="${contextPath}/memUpdateForm.do">
 						<span class="glyphicon glyphicon-wrench"></span>회원정보수정</a></li>
-						<li><a href="#">
+						<li><a href="${contextPath}/myPage.do">
 						<span class="glyphicon glyphicon-picture"></span>마이페이지</a></li>
 						<li><a href="${contextPath}/memLogout.do">
 						<span class="glyphicon glyphicon-log-out"></span>로그아웃</a></li>

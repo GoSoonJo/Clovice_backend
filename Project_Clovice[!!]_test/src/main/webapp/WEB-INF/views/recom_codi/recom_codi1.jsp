@@ -119,12 +119,12 @@
          <div class="about_section_main">
             <div class="row">
                <div class="col-md-6">
-                  <div><img src="${contextPath}/resources/codi/codi_2930.jpg" class="image_3"></div>
+                  <div><img src="${contextPath}/resources/recom_codi/codi_10612.jpg" class="image_3"></div>
                </div>
                <div class="col-md-6">
                   <div class="about_taital_main">
-                     <h1 class="about_taital">스트라이프 코디</h1>
-                     <p class="about_text">스트라이프 패턴이 돋보이는 티셔츠와 데님 팬츠를 매치하고 스니커즈로 마무리한 캐주얼 룩</p>
+                     <h1 class="about_taital">스트라이프 포인트</h1>
+                     <p class="about_text" style="font-size:21px;">스트라이프 패턴이 매력적인 긴팔 티셔츠와 폴리스 재킷을 매치하고 숏 패딩으로 완성한 캐주얼 룩</p>
                      <div class="readmore_bt"><a href="product1.do">다른 코디 더보기</a></div>
                   </div>
                   <div class="about_taital_main">
@@ -136,8 +136,8 @@
                         </div>
 
                         <div class="slides">
-                           <div class="active" style="background-image:url(${contextPath}/resources/product1/1809545_0.jpg);"></div>
-                           <div style="background-image:url(${contextPath}/resources/images/1375487_1.jpg);"></div>
+                           <div class="active" style="background-image:url(${contextPath}/resources/recom_codi_detail/1349501.jpg);"></div>
+                           <div style="background-image:url(${contextPath}/resources/product1/1595032_4.jpg);"></div>
                            <div style="background-image:url(${contextPath}/resources/images/1377183_0.jpg);"></div>
                            <div style="background-image:url(${contextPath}/resources/images/1378411_0.jpg);"></div>
                         </div>

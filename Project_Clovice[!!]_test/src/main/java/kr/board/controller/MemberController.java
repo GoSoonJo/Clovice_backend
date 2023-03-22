@@ -51,13 +51,14 @@ public class MemberController {
 				memPassword2==null || memPassword2.equals("")||
 				m.getMem_name()==null || m.getMem_name().equals("")||
 				m.getMem_birth()==0 ||
-				m.getMem_gender()==null || m.getMem_gender().equals("")||
-				m.getMem_email()==null || m.getMem_email().equals("")) {
+				m.getMem_email()==null || m.getMem_email().equals("") ||
+				m.getMem_phone()==null || m.getMem_phone().equals("")||
+				m.getMem_gender()==null || m.getMem_gender().equals("")){
 				// 누락메세지 가지고 가기? => 객체바인딩(Model,HttpServletRequest,HttpSession)
 				
 				rttr.addFlashAttribute("msgType","실패 메시지");
 				rttr.addFlashAttribute("msg","모든 내용을 입력하세요");
-				return "redirect:/memJoin1.do";
+				return "redirect:/memJoin.do";
 		}
 		if(!memPassword1.equals(memPassword2)) {
 			rttr.addFlashAttribute("msgType","실패 메시지");
@@ -110,7 +111,7 @@ public class MemberController {
 			session.setAttribute("mvo", mvo); // ${!empty mvo}
 			int cnt = logMapper.logCount(mvo.getMem_id()); 
 			if (cnt == 1) {
-				return "redirect:/";
+				return "redirect:/product1.do";
 			}else {
 				return "redirect:/memLoginForm.do";
 			}
