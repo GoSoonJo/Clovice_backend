@@ -10,15 +10,15 @@
 				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="${contextPath}">스프1탄</a>
+			<a class="navbar-brand" href="${contextPath}"></a>
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="${contextPath}">Home</a></li>
 
 				</li>
-				<li><a href="boardMain.do">게시판</a></li>
-				<li><a href="#">Page 2</a></li>
+				<li><a href="product1.do">추천받기</a></li>
+				<li><a href="boardMain.do">커뮤니티</a></li>
 			</ul>
 			<c:if test="${empty mvo}">
 			<ul class="nav navbar-nav navbar-right">
@@ -33,7 +33,7 @@
 						<li><a href="${contextPath}/memUpdateForm.do">
 						<span class="glyphicon glyphicon-wrench"></span>회원정보수정</a></li>
 						<li><a href="#">
-						<span class="glyphicon glyphicon-picture"></span>프로필사진등록</a></li>
+						<span class="glyphicon glyphicon-picture"></span>마이페이지</a></li>
 						<li><a href="${contextPath}/memLogout.do">
 						<span class="glyphicon glyphicon-log-out"></span>로그아웃</a></li>
 			</ul>

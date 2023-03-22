@@ -25,6 +25,49 @@ public class ProductController {
 	@RequestMapping("/top1.do")
 	public String top1() {
 		
-		return "top1";
+		return "product1/top1";
 	}
+	@RequestMapping("/top2.do")
+	public String top2() {
+		
+		return "product1/top2";
+	}
+	@RequestMapping("/top3.do")
+	public String top3() {
+		
+		return "product1/top3";
+	}
+	
+	@RequestMapping("/bottoms1.do")
+	public String bottoms1() {
+		
+		return "product2/bottoms1";
+	}
+	@RequestMapping("/bottoms2.do")
+	public String bottoms2() {
+		
+		return "product2/bottoms2";
+	}
+	@RequestMapping("/bottoms3.do")
+	public String bottoms3() {
+		
+		return "product2/bottoms3";
+	}
+	
+	@RequestMapping("/shoes1.do")
+	public String shoes1() {
+		
+		return "product3/shoes1";
+	}
+	@RequestMapping("/shoes2.do")
+	public String shoes2() {
+		
+		return "product3/shoes2";
+	}
+	@RequestMapping("/shoes3.do")
+	public String shoes3() {
+		
+		return "product3/shoes3";
+	}
+	
 }

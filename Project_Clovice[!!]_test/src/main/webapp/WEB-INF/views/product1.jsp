@@ -97,7 +97,7 @@
 				url : "http://127.0.0.1:8000/getCoordi",
 				type : 'get',
 				data : {
-					"member" : "gsj"
+					"mvo" : "mvo.getMem_id()"
 				},
 				success : function(res) {
 					console.log(res)
@@ -131,7 +131,7 @@
             <div class="row">
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
-                     <a href="top1.do" class="codi">
+                     <a href="${contextPath}/top1.do" class="codi">
                         <img src="${contextPath}/resources/product1/1595032_4.jpg" class="image_1">
                      </a>
 
@@ -141,15 +141,18 @@
 
                      <a href="#" class="hash">
                         <div class="tag_list">
-                           <a href="#" class="tag">#캐주얼</a>
-                           <a href="#" class="tag">#ㅇㅅㅇ</a>
+                           <a href="#" class="tag">#니트</a>
+                           <a href="#" class="tag">#스웨터</a>
+                           <a href="#" class="tag">#아가일</a>
+                           <a href="#" class="tag">#패턴</a>
+                           <a href="#" class="tag">#라운드니트</a>
                         </div>
                      </a>
                   </div>
                </div>
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
-                     <a href="#" class="codi">
+                     <a href="top2.do" class="codi">
                         <img src="${contextPath}/resources/product1/1595530_0.jpg" class="image_1">
                      </a>
                      <button type="button" class="btn_like" id="btn_like_2">
@@ -157,17 +160,17 @@
                      </button>
                      <a href="#" class="hash">
                         <div class="tag_list">
-                           <a href="#" class="tag">#걸리쉬</a>
-                           <a href="#" class="tag">#나는 가고 싶다</a>
-                           <a href="#" class="tag">#집에 매우</a>
-                           <a href="#" class="tag">#호에에에에</a>
+                           <a href="#" class="tag">#스웨트셔츠</a>
+                           <a href="#" class="tag">#오버핏맨투맨</a>
+                           <a href="#" class="tag">#루즈핏</a>
+                           <a href="#" class="tag">#유니버시티댄</a>
                         </div>
                      </a>
                   </div>
                </div>
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
-                     <a href="#" class="codi">
+                     <a href="top3.do" class="codi">
                         <img src="${contextPath}/resources/product1/1809545_0.jpg" class="image_1">
                      </a>
                      <button type="button" class="btn_like">
@@ -175,8 +178,11 @@
                      </button>
                      <a href="#" class="hash">
                         <div class="tag_list">
-                           <a href="#" class="tag">#캐주얼</a>
-                           <a href="#" class="tag">#ㅇㅅㅇ</a>
+                           <a href="#" class="tag">#릴렉스핏</a>
+                           <a href="#" class="tag">#긴팔티</a>
+                           <a href="#" class="tag">#면티셔츠</a>
+                           <a href="#" class="tag">#베이식</a>
+                           <a href="#" class="tag">#코튼티셔츠</a>
                         </div>
                      </a>
                   </div>
@@ -191,8 +197,11 @@
                      </button>
                      <a href="#" class="hash">
                         <div class="tag_list">
-                           <a href="#" class="tag">#캐주얼</a>
-                           <a href="#" class="tag">#ㅇㅅㅇ</a>
+                           <a href="#" class="tag">#니트</a>
+                           <a href="#" class="tag">#목폴라</a>
+                           <a href="#" class="tag">#터틀넥</a>
+                           <a href="#" class="tag">#니트컬렉션</a>
+                           <a href="#" class="tag">#라운드넥</a>
                         </div>
                      </a>
                   </div>
@@ -220,7 +229,7 @@
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
                      <a href="#" class="codi">
-                        <img src="${contextPath}/resources/codi_image/codi_2.jpg" class="image_1">
+                        <img src="${contextPath}/resources/product1/375788_1.jpg" class="image_1">
                      </a>
                      <button type="button" class="btn_like">
                         <span class="img_emoti">좋아요</span>
@@ -238,7 +247,7 @@
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
                      <a href="#" class="codi">
-                        <img src="${contextPath}/resources/codi_image/codi_3.jpg" class="image_1">
+                        <img src="${contextPath}/resources/product1/385163_0.jpg" class="image_1">
                      </a>
                      <button type="button" class="btn_like">
                         <span class="img_emoti">좋아요</span>
@@ -254,7 +263,7 @@
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
                      <a href="#" class="codi">
-                        <img src="${contextPath}/resources/codi_image/codi_4.jpg" class="image_1">
+                        <img src="${contextPath}/resources/product1/394608_1.jpg" class="image_1">
                      </a>
                      <button type="button" class="btn_like">
                         <span class="img_emoti">좋아요</span>

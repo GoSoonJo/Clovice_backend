@@ -14,6 +14,43 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+	   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="${contextPath}/resources/css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="${contextPath}/resources/images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="${contextPath}/resources/css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans:400,700&display=swap&subset=latin-ext"
+      rel="stylesheet">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href="${contextPath}/resources/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="${contextPath}/resources/css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+   <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+   <link rel="stylesheet" href="${contextPath}/resources/css/like.css">
+	
+	
+	
 <script type="text/javascript">
 	$(document).ready(function() {
 		loadList();
@@ -117,9 +154,7 @@
 			})
 			
 			$("#c"+idx).css("display","table-row"); // 보이게
-			$("#ta"+idx).attr("readonly",true);
-		}else{
-			$("#c"+idx).css("display","none"); // 감추게
+			
 			$.ajax({
 				url : "board/count/"+idx,
 				type : "put",
@@ -130,6 +165,11 @@
 				},
 				error : function(){alert("error");}
 			});
+			
+			$("#ta"+idx).attr("readonly",true);
+		}else{
+			$("#c"+idx).css("display","none"); // 감추게
+			
 		}
 	}
 	function goDelete(idx){
@@ -171,9 +211,9 @@
 <body>
 	<div class="container">
 <jsp:include page="../common/header.jsp"/>
-		<h2>Spring MVC03</h2>
+		<h2>게시판</h2>
 		<div class="panel panel-default">
-			<div class="panel-heading">Board</div>
+			<div class="panel-heading"></div>
 			<div class="panel-body" id="view">Panel Content</div>
 			<div class="panel-body" id="wform" style="display:none">
 			
@@ -202,7 +242,7 @@
 					</table>
 				</form>
 			</div>
-			<div class="panel-footer">인프런_스프1탄_PMK</div>
+			<div class="panel-footer"></div>
 		</div>
 	</div>
 

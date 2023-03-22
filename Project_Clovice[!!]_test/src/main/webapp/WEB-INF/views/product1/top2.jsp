@@ -41,23 +41,144 @@
       media="screen">
    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
 
+<body>
+  <!-- header section start -->
+  <jsp:include page="../common/header1.jsp"></jsp:include>
+   <!-- header section end -->
+   <!-- about section start -->
+   <div class="about_section layout_padding">
+      <div class="container">
+         <div class="info_section_main">
+            <div class="row">
+               <div class="col-md-6">
+                  <div><img src="${contextPath}/resources/codi/codi_7219.jpg" class="image_3"></div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_taital_main">
+                     <h1 class="about_taital">#캐주얼</h1>
+                     <p class="about_text">labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatlabore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequatlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                     <div class="readmore_bt"><a href="#">다른 코디 더보기</a></div>
+                  </div>
+                  <div class="about_taital_main">
+                     <div class="slider-2">
+
+                        <div class="side-btns">
+                           <div><span><i class="fas fa-caret-left"></i></i></span></div>
+                           <div><span><i class="fas fa-caret-right"></i></span></div>
+                        </div>
+
+                        <div class="info_slides">
+                           <div class="active" style="background-image:url(${contextPath}/resources/product1/1595530_0.jpg);");"></div>
+                           <div style="background-image:url(${contextPath}/resources/images/424331_0.jpg);"></div>
+                           <div style="background-image:url(${contextPath}/resources/images/1377183_0.jpg);"></div>
+                           <div style="background-image:url(${contextPath}/resources/images/1378411_0.jpg);"></div>
+                        </div>
+
+                        <div class="page-nav">
+                           <div class="active"></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- about section end -->
+   <!-- footer section start -->
+   <div class="footer_section layout_padding">
+      <div class="container">
+         <div class="footer_logo"><a href="index.html"><img src="${contextPath}/resources/images/footer-logo.png"></a></div>
+         <div class="contact_section_2">
+            <div class="row">
+               <div class="col-sm-4">
+                  <h3 class="address_text">Contact Us</h3>
+                  <div class="address_bt">
+                     <ul>
+                        <li>
+                           <a href="#">
+                              <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left10">Address :
+                                 Loram Ipusm</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left10">Call : +01
+                                 1234567890</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left10">Email :
+                                 demo@gmail.com</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-4">
+                  <div class="footer_logo_1"><a href="index.html"><img src="${contextPath}/resources/images/logo.png"></a></div>
+                  <p class="dummy_text">commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+               </div>
+               <div class="col-sm-4">
+                  <div class="main">
+                     <h3 class="address_text">Best Products</h3>
+                     <p class="ipsum_text">dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="social_icon">
+            <ul>
+               <li>
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+               </li>
+               <li>
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+               </li>
+               <li>
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+               </li>
+               <li>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <!-- footer section end -->
+   <!-- copyright section start -->
+   <div class="copyright_section">
+      <div class="container">
+         <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free html
+               Templates</a></p>
+      </div>
+   </div>
+   <!-- copyright section end -->
    <!-- Javascript files-->
-   <script src="${contextPath}/resources/js/jquery.min.js"></script>
-   <script src="${contextPath}/resources/js/popper.min.js"></script>
-   <script src="${contextPath}/resources/js/bootstrap.bundle.min.js"></script>
-   <script src="${contextPath}/resources/js/jquery-3.0.0.min.js"></script>
-   <script src="${contextPath}/resources/js/plugin.js"></script>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <script src="js/plugin.js"></script>
    <!-- sidebar -->
-   <script src="${contextPath}/resources/js/jquery.mCustomScrollbar.concat.min.js"></script>
-   <script src="${contextPath}/resources/js/custom.js"></script>
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
    <!-- javascript -->
-   <script src="${contextPath}/resources/js/owl.carousel.js"></script>
-   <script src="${contextPath}/resources/https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-   <script src="${contextPath}/resources/https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
-  
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  
+   <script src="js/owl.carousel.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+   <script src="https://kit.fontawesome.com/bf30d78bf3.js" crossorigin="anonymous"></script>
    <script>
       $('.slider-2 .page-nav > div').click(function () {
 
@@ -71,8 +192,8 @@
          var index = $this.index();
          var $슬라이더 = $this.closest('.slider-2');
 
-         $슬라이더.find('.slides > div.active').removeClass('active');
-         $슬라이더.find('.slides > div').eq(index).addClass('active');
+         $슬라이더.find('.info_slides > div.active').removeClass('active');
+         $슬라이더.find('.info_slides > div').eq(index).addClass('active');
 
 
       });
@@ -105,63 +226,6 @@
          $post.click();
       });
    </script>
-
-
-</head>
-
-<body>
-   <!-- header section start -->
-  <jsp:include page="./common/header1.jsp"></jsp:include>
-   <!-- header section end -->
-   <!-- about section start -->
-   <div class="about_section layout_padding">
-      <div class="container">
-         <div class="about_section_main">
-            <div class="row">
-               <div class="col-md-6">
-                  <div><img src="${contextPath}/resources/images/64578.jpg" class="image_3"></div>
-               </div>
-               <div class="col-md-6">
-                  <div class="about_taital_main">
-                     <h1 class="about_taital">#캐주얼</h1>
-                     <p class="about_text">labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatlabore et dolore magna
-                        aliqua.</p>
-                     <div class="readmore_bt"><a href="#">다른 코디 더보기</a></div>
-                  </div>
-                  <div class="about_taital_main">
-                     <div class="slider-2">
-
-                        <div class="side-btns">
-                           <div><span><i class="fas fa-caret-left"></i></i></span></div>
-                           <div><span><i class="fas fa-caret-right"></i></span></div>
-                        </div>
-
-                        <div class="slides">
-                           <div class="active" style="background-image:url(${contextPath}/resources/images/1150606_0.jpg);"></div>
-                           <div style="background-image:url(${contextPath}/resources/images/1375487_1.jpg);"></div>
-                           <div style="background-image:url(${contextPath}/resources/images/1377183_0.jpg);"></div>
-                           <div style="background-image:url(${contextPath}/resources/images/1378411_0.jpg);"></div>
-                        </div>
-
-                        <div class="page-nav">
-                           <div class="active"></div>
-                           <div></div>
-                           <div></div>
-                           <div></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- about section end -->
-   <!-- footer section start -->
-   		<jsp:include page="common/footer.jsp"></jsp:include>
-   <!-- footer section end -->
-
 </body>
 
 </html>

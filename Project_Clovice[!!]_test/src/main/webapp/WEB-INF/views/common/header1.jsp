@@ -8,11 +8,14 @@
         <div class="container-fluid">
             <nav class="navbar navbar-light bg-light justify-content-between">
                 <a class="logo" href="${contextPath}"><img src="${contextPath}/resources/images/logo.png"></a></a>
-                <a href="${contextPath}" class="text-dark">Home</a>
-                <a href="products.do" class="text-dark">Products</a>
-                <a href="about.html" class="text-dark">About</a>
-                <a href="client.html" class="text-dark">Client</a>
-                <a href="contact.html" class="text-dark">Contact</a>
+                <c:if test="${!empty mvo}">
+                <a href="product1.do" class="text-dark" style="font-size:20px;">상의</a>
+                <a href="product2.do" class="text-dark" style="font-size:20px;">하의</a>
+                <a href="product3.do" class="text-dark" style="font-size:20px;">신발</a>
+                <a href="boardMain.do" class="text-dark" style="font-size:20px;">커뮤니티</a>
+                </c:if>
+                <c:if test="${empty mvo}">
+                 </c:if>
                 <form class="form-inline ">
                     <div class="login_text">
                  		<c:if test="${empty mvo}">
@@ -25,9 +28,9 @@
 						</c:if>
 						<c:if test="${!empty mvo}">
 							<ul>
-								<li><a href="${contextPath}/myPage.do" class="text-dark">
+								<li><a href="${contextPath}/myPage.do" class="text-dark" style="font-size:15px;">
 								<span class="glyphicon glyphicon-wrench"></span>마이페이지</a></li>
-								<li><a href="${contextPath}/memLogout.do" class="text-dark">
+								<li><a href="${contextPath}/memLogout.do" class="text-dark" style="font-size:15px;">
 								<span class="glyphicon glyphicon-log-out"></span>로그아웃</a></li>
 							</ul>
 						</c:if>

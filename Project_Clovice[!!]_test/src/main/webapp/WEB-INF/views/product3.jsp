@@ -131,7 +131,7 @@
             <div class="row">
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
-                     <a href="codi.do" class="codi">
+                     <a href="shoes1.do" class="codi">
                         <img src="${contextPath}/resources/product3/1110340_0.jpg" class="image_1">
                      </a>
 
@@ -141,15 +141,18 @@
 
                      <a href="#" class="hash">
                         <div class="tag_list">
-                           <a href="#" class="tag">#캐주얼</a>
-                           <a href="#" class="tag">#ㅇㅅㅇ</a>
+                           <a href="#" class="tag">#구두</a>
+                           <a href="#" class="tag">#더비슈즈</a>
+                           <a href="#" class="tag">#스퀘어더비</a>
+                           <a href="#" class="tag">#LOSTGAREN</a>
+                           <a href="#" class="tag">#무드한방올가을룩앤슈즈</a>
                         </div>
                      </a>
                   </div>
                </div>
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
-                     <a href="#" class="codi">
+                     <a href="shoes2.do" class="codi">
                         <img src="${contextPath}/resources/product3/1493265_5.jpg" class="image_1">
                      </a>
                      <button type="button" class="btn_like" id="btn_like_2">
@@ -157,17 +160,18 @@
                      </button>
                      <a href="#" class="hash">
                         <div class="tag_list">
-                           <a href="#" class="tag">#걸리쉬</a>
-                           <a href="#" class="tag">#나는 가고 싶다</a>
-                           <a href="#" class="tag">#집에 매우</a>
-                           <a href="#" class="tag">#호에에에에</a>
+                           <a href="#" class="tag">#신발</a>
+                           <a href="#" class="tag">#빈티지</a>
+                           <a href="#" class="tag">#척70</a>
+                           <a href="#" class="tag">#척70빈티지</a>
+                           <a href="#" class="tag">#RESTOCK</a>
                         </div>
                      </a>
                   </div>
                </div>
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
-                     <a href="#" class="codi">
+                     <a href="shoes3.do" class="codi">
                         <img src="${contextPath}/resources/product3/1635190_1.jpg" class="image_1">
                      </a>
                      <button type="button" class="btn_like">
@@ -175,8 +179,12 @@
                      </button>
                      <a href="#" class="hash">
                         <div class="tag_list">
-                           <a href="#" class="tag">#캐주얼</a>
-                           <a href="#" class="tag">#ㅇㅅㅇ</a>
+                           <a href="#" class="tag">#트레이너</a>
+                           <a href="#" class="tag">#레플리카</a>
+                           <a href="#" class="tag">#커플신발</a>
+                           <a href="#" class="tag">#오솔라이트</a>
+                           <a href="#" class="tag">#사계절</a>
+                           <a href="#" class="tag">#운동화</a>
                         </div>
                      </a>
                   </div>
@@ -191,8 +199,11 @@
                      </button>
                      <a href="#" class="hash">
                         <div class="tag_list">
-                           <a href="#" class="tag">#캐주얼</a>
-                           <a href="#" class="tag">#ㅇㅅㅇ</a>
+                           <a href="#" class="tag">#블랙</a>
+                           <a href="#" class="tag">#스니커즈</a>
+                           <a href="#" class="tag">#척테일러</a>
+                           <a href="#" class="tag">#척테일러올스타</a>
+                           <a href="#" class="tag">#스테디셀러</a>
                         </div>
                      </a>
                   </div>
@@ -220,7 +231,7 @@
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
                      <a href="#" class="codi">
-                        <img src="${contextPath}/resources/product3/928896_2.jpg" class="image_1">
+                        <img src="${contextPath}/resources/product3/810033_3.jpg" class="image_1">
                      </a>
                      <button type="button" class="btn_like">
                         <span class="img_emoti">좋아요</span>
@@ -238,7 +249,7 @@
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
                      <a href="#" class="codi">
-                        <img src="${contextPath}/resources/codi_image/codi_3.jpg" class="image_1">
+                        <img src="${contextPath}/resources/product3/819685_18.jpg" class="image_1">
                      </a>
                      <button type="button" class="btn_like">
                         <span class="img_emoti">좋아요</span>
@@ -254,7 +265,7 @@
                <div class="col-lg-3 col-sm-6">
                   <div class="product_box">
                      <a href="#" class="codi">
-                        <img src="${contextPath}/resources/codi_image/codi_4.jpg" class="image_1">
+                        <img src="${contextPath}/resources/product3/825978_0.jpg" class="image_1">
                      </a>
                      <button type="button" class="btn_like">
                         <span class="img_emoti">좋아요</span>

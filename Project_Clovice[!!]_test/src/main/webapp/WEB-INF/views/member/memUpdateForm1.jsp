@@ -98,7 +98,7 @@ $(document).ready(function(){
     	<jsp:include page="../common/header1.jsp"></jsp:include>
     <div class="member">
 
-        <h1>Clovice</h1>
+        <h1>회원정보수정</h1>
 
 
 		<form name="frm" action="${contextPath}/memUpdate.do" method="post">

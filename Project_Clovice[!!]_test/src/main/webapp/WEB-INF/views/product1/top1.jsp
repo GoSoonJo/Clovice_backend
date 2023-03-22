@@ -111,7 +111,7 @@
 
 <body>
    <!-- header section start -->
-  <jsp:include page="./common/header1.jsp"></jsp:include>
+  <jsp:include page="../common/header1.jsp"></jsp:include>
    <!-- header section end -->
    <!-- about section start -->
    <div class="about_section layout_padding">
@@ -119,7 +119,7 @@
          <div class="about_section_main">
             <div class="row">
                <div class="col-md-6">
-                  <div><img src="${contextPath}/resources/images/64578.jpg" class="image_3"></div>
+                  <div><img src="${contextPath}/resources/codi_image/codi_2585.jpg" class="image_3"></div>
                </div>
                <div class="col-md-6">
                   <div class="about_taital_main">
@@ -138,8 +138,8 @@
                         </div>
 
                         <div class="slides">
-                           <div class="active" style="background-image:url(${contextPath}/resources/images/1150606_0.jpg);"></div>
-                           <div style="background-image:url(${contextPath}/resources/images/1375487_1.jpg);"></div>
+                           <div class="active" style="background-image:url(${contextPath}/resources/product1/1595032_4.jpg);"></div>
+                           <div style="background-image:url(${contextPath}/resources/product1/1595032_4.jpg);"></div>
                            <div style="background-image:url(${contextPath}/resources/images/1377183_0.jpg);"></div>
                            <div style="background-image:url(${contextPath}/resources/images/1378411_0.jpg);"></div>
                         </div>
@@ -159,7 +159,7 @@
    </div>
    <!-- about section end -->
    <!-- footer section start -->
-   		<jsp:include page="common/footer.jsp"></jsp:include>
+   		<jsp:include page="../common/footer.jsp"></jsp:include>
    <!-- footer section end -->
 
 </body>

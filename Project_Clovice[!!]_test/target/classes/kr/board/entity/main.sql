@@ -95,4 +95,25 @@ INSERT INTO product VALUES(1001514,018,002,'cloth','제이다울','https://www.m
 INSERT INTO product VALUES(1001541,018,002,'cloth','제이다울','https://www.musinsa.com/app/goods/1001541','url');
 INSERT INTO product VALUES(1003930,005,012,'cloth','어썸듀','https://www.musinsa.com/app/goods/1003930','url');
 
+CREATE TABLE member_log (
+    mem_Id VARCHAR2(20) not null,
+    mem_login date default sysdate not null,
+    login_count number not null,
+    CONSTRAINT MEM_ID_FK FOREIGN KEY (MEM_ID)
+	  REFERENCES MEMBER_INFO (MEM_ID)
+);
+
+CREATE SEQUENCE member_log_seq START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER member_log_trg
+BEFORE INSERT ON member_log
+referencing new as new FOR EACH ROW
+BEGIN
+    SELECT member_log_seq.NEXTVAL
+    INTO :NEW.login_count
+    FROM DUAL;
+END;
+/
+
+
 
