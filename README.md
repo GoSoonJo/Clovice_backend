@@ -1,10 +1,4 @@
-# ✏ 2차프로젝트 Clovice팀 - 유사도 기반 의류 추천 서비스
-
----
-
-
-
-
+![header](https://capsule-render.vercel.app/api?type=Waving&color=auto&height=300&section=header&text=✏유사도%20기반%20의류%20추천%20서비스-nl-&fontSize=50&animation=twinkling&desc=최종%20프로젝트%20Team.Clovice)
 ## 📅 프로젝트 기간
 
 
@@ -19,7 +13,7 @@
 - DB 연결, 백엔드, 크롤링, 모델링
 
 
-박명기
+:man:박명기:man:
 - 웹-서버 연결, 백엔드, 프론트엔드, 크롤링, 모델링
 
 
