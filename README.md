@@ -104,7 +104,10 @@ _🛠버전관리 및 협업툴_
 
 ---
 
+# 🎥 프로젝트 시연영상
 
+
+## 👇👇 썸네일을 클릭하시면 영상이 재생됩니다!
 [![Video Label](http://img.youtube.com/vi/IhhzdfjQnK4/0.jpg)](https://youtu.be/IhhzdfjQnK4)
 
 
