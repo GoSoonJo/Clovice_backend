@@ -102,6 +102,12 @@ _🛠버전관리 및 협업툴_
 - 의류 쇼핑 실패로 인해 발생하는 의류 폐기물 감소에 기여할 수 있다.
 
 
+---
+
+
+[![Video Label](http://img.youtube.com/vi/'IhhzdfjQnK4'/0.jpg)](https://youtu.be/'IhhzdfjQnK4')
+
+
 
 
 
