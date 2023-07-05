@@ -105,6 +105,8 @@ _🛠버전관리 및 협업툴_
 [![Video Label](http://img.youtube.com/vi/IhhzdfjQnK4/0.jpg)](https://youtu.be/IhhzdfjQnK4)
 
 
+![footer](https://capsule-render.vercel.app/api?type=Shark&color=auto&height=300&section=footer&text=😀Thanks%20for%20watching-nl-&fontSize=50&animation=twinkling&desc=)
+
 
 
 
